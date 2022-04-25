@@ -1,0 +1,14 @@
+1	W	A	3
+1	W	B	1
+2   W	C	2
+2   W	D	1
+1	R	A	
+1	R	B
+1	R	A
+1	E	C	1	z
+1	E	C	2	x
+1	D	B
+1	E	B	1	z
+1	W	A	2
+1	W	E	2
+
