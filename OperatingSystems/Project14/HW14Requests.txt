@@ -1,0 +1,16 @@
+1	W	A	3
+1	W	B	1
+2   W	C	2
+2   W	D	1
+1	R	A	
+1	R	B
+2	E	C	1	z
+2	E	C	2	x
+1	D	B
+1	E	C	4	a
+1	C	C	2
+1   E   C   4   a
+2	E	C	400 b
+1	C	C	2
+1	E	C	4	a
+

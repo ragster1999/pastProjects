@@ -1,0 +1,141 @@
+=========================
+Bitmap
+1	1	1	1	1	1	0	0	0	0	
+=========================
+Size: 10
+Block: 0	aaaa
+Block: 1	aaaa
+Block: 2	aaaa
+Block: 3	bbbb
+Block: 4	bbbb
+Block: 5	cccc
+Block: 6	----
+Block: 7	----
+Block: 8	----
+Block: 9	----
+
+=========================
+File name: A
+0	1	2	3	4	
+0	1	2	-1	-1	
+Permissions: 
+1: rwx
+
+File name: B
+0	1	2	3	4	
+3	4	-1	-1	-1	
+Permissions: 
+1: rwx
+
+File name: C
+0	1	2	3	4	
+5	-1	-1	-1	-1	
+Permissions: 
+2: rwx
+
+=========================
+Bitmap
+1	1	1	1	1	1	0	0	0	0	
+=========================
+Size: 10
+Block: 0	aaaa
+Block: 1	aaaa
+Block: 2	aaaa
+Block: 3	bbbb
+Block: 4	bbbb
+Block: 5	cccc
+Block: 6	----
+Block: 7	----
+Block: 8	----
+Block: 9	----
+
+=========================
+File name: A
+0	1	2	3	4	
+0	1	2	-1	-1	
+Permissions: 
+1: rx
+
+File name: B
+0	1	2	3	4	
+3	4	-1	-1	-1	
+Permissions: 
+1: rwx
+
+File name: C
+0	1	2	3	4	
+5	-1	-1	-1	-1	
+Permissions: 
+2: rwx
+
+=========================
+Bitmap
+1	1	1	1	1	1	0	0	0	0	
+=========================
+Size: 10
+Block: 0	aaaa
+Block: 1	aaaa
+Block: 2	aaaa
+Block: 3	bbbb
+Block: 4	bbbb
+Block: 5	cccc
+Block: 6	----
+Block: 7	----
+Block: 8	----
+Block: 9	----
+
+=========================
+File name: A
+0	1	2	3	4	
+0	1	2	-1	-1	
+Permissions: 
+1: rx
+
+File name: B
+0	1	2	3	4	
+3	4	-1	-1	-1	
+Permissions: 
+1: rwx
+2: wx
+
+File name: C
+0	1	2	3	4	
+5	-1	-1	-1	-1	
+Permissions: 
+2: rwx
+
+=========================
+Bitmap
+1	1	1	1	1	1	0	0	0	0	
+=========================
+Size: 10
+Block: 0	aaaa
+Block: 1	aaaa
+Block: 2	aaaa
+Block: 3	bbbb
+Block: 4	bbbb
+Block: 5	cccc
+Block: 6	----
+Block: 7	----
+Block: 8	----
+Block: 9	----
+
+=========================
+File name: A
+0	1	2	3	4	
+0	1	2	-1	-1	
+Permissions: 
+
+File name: B
+0	1	2	3	4	
+3	4	-1	-1	-1	
+Permissions: 
+1: rwx
+2: wx
+
+File name: C
+0	1	2	3	4	
+5	-1	-1	-1	-1	
+Permissions: 
+2: rwx
+

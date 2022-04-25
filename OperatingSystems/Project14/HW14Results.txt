@@ -1,0 +1,591 @@
+*******************OPERATION: 0********************
+Process 1 wants to write file A and needs 3 blocks
+File A added successfully
+=========================
+Bitmap
+1	1	1	0	0	0	0	0	0	0	
+=========================
+Size: 10
+Block: 0	aaaa
+Block: 1	aaaa
+Block: 2	aaaa
+Block: 3	----
+Block: 4	----
+Block: 5	----
+Block: 6	----
+Block: 7	----
+Block: 8	----
+Block: 9	----
+
+=========================
+File name: A
+0	1	2	3	4	
+0	1	2	-1	-1	
+Permissions: 
+1: rwx
+
+*******************OPERATION: 1********************
+Process 1 wants to write file B and needs 1 blocks
+File B added successfully
+=========================
+Bitmap
+1	1	1	1	0	0	0	0	0	0	
+=========================
+Size: 10
+Block: 0	aaaa
+Block: 1	aaaa
+Block: 2	aaaa
+Block: 3	bbbb
+Block: 4	----
+Block: 5	----
+Block: 6	----
+Block: 7	----
+Block: 8	----
+Block: 9	----
+
+=========================
+File name: A
+0	1	2	3	4	
+0	1	2	-1	-1	
+Permissions: 
+1: rwx
+
+File name: B
+0	1	2	3	4	
+3	-1	-1	-1	-1	
+Permissions: 
+1: rwx
+
+*******************OPERATION: 2********************
+Process 2 wants to write file C and needs 2 blocks
+File C added successfully
+=========================
+Bitmap
+1	1	1	1	1	1	0	0	0	0	
+=========================
+Size: 10
+Block: 0	aaaa
+Block: 1	aaaa
+Block: 2	aaaa
+Block: 3	bbbb
+Block: 4	cccc
+Block: 5	cccc
+Block: 6	----
+Block: 7	----
+Block: 8	----
+Block: 9	----
+
+=========================
+File name: A
+0	1	2	3	4	
+0	1	2	-1	-1	
+Permissions: 
+1: rwx
+
+File name: B
+0	1	2	3	4	
+3	-1	-1	-1	-1	
+Permissions: 
+1: rwx
+
+File name: C
+0	1	2	3	4	
+4	5	-1	-1	-1	
+Permissions: 
+2: rwx
+
+*******************OPERATION: 3********************
+Process 2 wants to write file D and needs 1 blocks
+File D added successfully
+=========================
+Bitmap
+1	1	1	1	1	1	1	0	0	0	
+=========================
+Size: 10
+Block: 0	aaaa
+Block: 1	aaaa
+Block: 2	aaaa
+Block: 3	bbbb
+Block: 4	cccc
+Block: 5	cccc
+Block: 6	dddd
+Block: 7	----
+Block: 8	----
+Block: 9	----
+
+=========================
+File name: A
+0	1	2	3	4	
+0	1	2	-1	-1	
+Permissions: 
+1: rwx
+
+File name: B
+0	1	2	3	4	
+3	-1	-1	-1	-1	
+Permissions: 
+1: rwx
+
+File name: C
+0	1	2	3	4	
+4	5	-1	-1	-1	
+Permissions: 
+2: rwx
+
+File name: D
+0	1	2	3	4	
+6	-1	-1	-1	-1	
+Permissions: 
+2: rwx
+
+*******************OPERATION: 4********************
+Process 1 wants to read file A
+Data
+aaaaaaaaaaaa
+===============================
+File A read successfully
+=========================
+Bitmap
+1	1	1	1	1	1	1	0	0	0	
+=========================
+Size: 10
+Block: 0	aaaa
+Block: 1	aaaa
+Block: 2	aaaa
+Block: 3	bbbb
+Block: 4	cccc
+Block: 5	cccc
+Block: 6	dddd
+Block: 7	----
+Block: 8	----
+Block: 9	----
+
+=========================
+File name: A
+0	1	2	3	4	
+0	1	2	-1	-1	
+Permissions: 
+1: rwx
+
+File name: B
+0	1	2	3	4	
+3	-1	-1	-1	-1	
+Permissions: 
+1: rwx
+
+File name: C
+0	1	2	3	4	
+4	5	-1	-1	-1	
+Permissions: 
+2: rwx
+
+File name: D
+0	1	2	3	4	
+6	-1	-1	-1	-1	
+Permissions: 
+2: rwx
+
+*******************OPERATION: 5********************
+Process 1 wants to read file B
+Data
+bbbb
+===============================
+File B read successfully
+=========================
+Bitmap
+1	1	1	1	1	1	1	0	0	0	
+=========================
+Size: 10
+Block: 0	aaaa
+Block: 1	aaaa
+Block: 2	aaaa
+Block: 3	bbbb
+Block: 4	cccc
+Block: 5	cccc
+Block: 6	dddd
+Block: 7	----
+Block: 8	----
+Block: 9	----
+
+=========================
+File name: A
+0	1	2	3	4	
+0	1	2	-1	-1	
+Permissions: 
+1: rwx
+
+File name: B
+0	1	2	3	4	
+3	-1	-1	-1	-1	
+Permissions: 
+1: rwx
+
+File name: C
+0	1	2	3	4	
+4	5	-1	-1	-1	
+Permissions: 
+2: rwx
+
+File name: D
+0	1	2	3	4	
+6	-1	-1	-1	-1	
+Permissions: 
+2: rwx
+
+*******************OPERATION: 6********************
+Process 2 wants to edit file C
+File C edited successfully
+=========================
+Bitmap
+1	1	1	1	1	1	1	0	0	0	
+=========================
+Size: 10
+Block: 0	aaaa
+Block: 1	aaaa
+Block: 2	aaaa
+Block: 3	bbbb
+Block: 4	czcc
+Block: 5	cccc
+Block: 6	dddd
+Block: 7	----
+Block: 8	----
+Block: 9	----
+
+=========================
+File name: A
+0	1	2	3	4	
+0	1	2	-1	-1	
+Permissions: 
+1: rwx
+
+File name: B
+0	1	2	3	4	
+3	-1	-1	-1	-1	
+Permissions: 
+1: rwx
+
+File name: C
+0	1	2	3	4	
+4	5	-1	-1	-1	
+Permissions: 
+2: rwx
+
+File name: D
+0	1	2	3	4	
+6	-1	-1	-1	-1	
+Permissions: 
+2: rwx
+
+*******************OPERATION: 7********************
+Process 2 wants to edit file C
+File C edited successfully
+=========================
+Bitmap
+1	1	1	1	1	1	1	0	0	0	
+=========================
+Size: 10
+Block: 0	aaaa
+Block: 1	aaaa
+Block: 2	aaaa
+Block: 3	bbbb
+Block: 4	czxc
+Block: 5	cccc
+Block: 6	dddd
+Block: 7	----
+Block: 8	----
+Block: 9	----
+
+=========================
+File name: A
+0	1	2	3	4	
+0	1	2	-1	-1	
+Permissions: 
+1: rwx
+
+File name: B
+0	1	2	3	4	
+3	-1	-1	-1	-1	
+Permissions: 
+1: rwx
+
+File name: C
+0	1	2	3	4	
+4	5	-1	-1	-1	
+Permissions: 
+2: rwx
+
+File name: D
+0	1	2	3	4	
+6	-1	-1	-1	-1	
+Permissions: 
+2: rwx
+
+*******************OPERATION: 8********************
+Process 1 wants to delete file B
+File B deleted successfully
+=========================
+Bitmap
+1	1	1	0	1	1	1	0	0	0	
+=========================
+Size: 10
+Block: 0	aaaa
+Block: 1	aaaa
+Block: 2	aaaa
+Block: 3	----
+Block: 4	czxc
+Block: 5	cccc
+Block: 6	dddd
+Block: 7	----
+Block: 8	----
+Block: 9	----
+
+=========================
+File name: A
+0	1	2	3	4	
+0	1	2	-1	-1	
+Permissions: 
+1: rwx
+
+File name: C
+0	1	2	3	4	
+4	5	-1	-1	-1	
+Permissions: 
+2: rwx
+
+File name: D
+0	1	2	3	4	
+6	-1	-1	-1	-1	
+Permissions: 
+2: rwx
+
+*******************OPERATION: 9********************
+Process 1 wants to edit file C
+Edit error: Process does not have permission to edit file
+=========================
+Bitmap
+1	1	1	0	1	1	1	0	0	0	
+=========================
+Size: 10
+Block: 0	aaaa
+Block: 1	aaaa
+Block: 2	aaaa
+Block: 3	----
+Block: 4	czxc
+Block: 5	cccc
+Block: 6	dddd
+Block: 7	----
+Block: 8	----
+Block: 9	----
+
+=========================
+File name: A
+0	1	2	3	4	
+0	1	2	-1	-1	
+Permissions: 
+1: rwx
+
+File name: C
+0	1	2	3	4	
+4	5	-1	-1	-1	
+Permissions: 
+2: rwx
+
+File name: D
+0	1	2	3	4	
+6	-1	-1	-1	-1	
+Permissions: 
+2: rwx
+
+*******************OPERATION: 10********************
+Process 1 changing permissions to 2 for file C
+=========================
+Bitmap
+1	1	1	0	1	1	1	0	0	0	
+=========================
+Size: 10
+Block: 0	aaaa
+Block: 1	aaaa
+Block: 2	aaaa
+Block: 3	----
+Block: 4	czxc
+Block: 5	cccc
+Block: 6	dddd
+Block: 7	----
+Block: 8	----
+Block: 9	----
+
+=========================
+File name: A
+0	1	2	3	4	
+0	1	2	-1	-1	
+Permissions: 
+1: rwx
+
+File name: C
+0	1	2	3	4	
+4	5	-1	-1	-1	
+Permissions: 
+2: rwx
+1: w
+
+File name: D
+0	1	2	3	4	
+6	-1	-1	-1	-1	
+Permissions: 
+2: rwx
+
+*******************OPERATION: 11********************
+Process 1 wants to edit file C
+File C edited successfully
+=========================
+Bitmap
+1	1	1	0	1	1	1	0	0	0	
+=========================
+Size: 10
+Block: 0	aaaa
+Block: 1	aaaa
+Block: 2	aaaa
+Block: 3	----
+Block: 4	czxc
+Block: 5	accc
+Block: 6	dddd
+Block: 7	----
+Block: 8	----
+Block: 9	----
+
+=========================
+File name: A
+0	1	2	3	4	
+0	1	2	-1	-1	
+Permissions: 
+1: rwx
+
+File name: C
+0	1	2	3	4	
+4	5	-1	-1	-1	
+Permissions: 
+2: rwx
+1: w
+
+File name: D
+0	1	2	3	4	
+6	-1	-1	-1	-1	
+Permissions: 
+2: rwx
+
+*******************OPERATION: 12********************
+Process 2 wants to edit file C
+Edit error: Offset outside the valid range
+=========================
+Bitmap
+1	1	1	0	1	1	1	0	0	0	
+=========================
+Size: 10
+Block: 0	aaaa
+Block: 1	aaaa
+Block: 2	aaaa
+Block: 3	----
+Block: 4	czxc
+Block: 5	accc
+Block: 6	dddd
+Block: 7	----
+Block: 8	----
+Block: 9	----
+
+=========================
+File name: A
+0	1	2	3	4	
+0	1	2	-1	-1	
+Permissions: 
+1: rwx
+
+File name: C
+0	1	2	3	4	
+4	5	-1	-1	-1	
+Permissions: 
+2: rwx
+1: w
+
+File name: D
+0	1	2	3	4	
+6	-1	-1	-1	-1	
+Permissions: 
+2: rwx
+
+*******************OPERATION: 13********************
+Process 1 changing permissions to 2 for file C
+=========================
+Bitmap
+1	1	1	0	1	1	1	0	0	0	
+=========================
+Size: 10
+Block: 0	aaaa
+Block: 1	aaaa
+Block: 2	aaaa
+Block: 3	----
+Block: 4	czxc
+Block: 5	accc
+Block: 6	dddd
+Block: 7	----
+Block: 8	----
+Block: 9	----
+
+=========================
+File name: A
+0	1	2	3	4	
+0	1	2	-1	-1	
+Permissions: 
+1: rwx
+
+File name: C
+0	1	2	3	4	
+4	5	-1	-1	-1	
+Permissions: 
+2: rwx
+1: w
+
+File name: D
+0	1	2	3	4	
+6	-1	-1	-1	-1	
+Permissions: 
+2: rwx
+
+*******************OPERATION: 14********************
+Process 1 wants to edit file C
+File C edited successfully
+=========================
+Bitmap
+1	1	1	0	1	1	1	0	0	0	
+=========================
+Size: 10
+Block: 0	aaaa
+Block: 1	aaaa
+Block: 2	aaaa
+Block: 3	----
+Block: 4	czxc
+Block: 5	accc
+Block: 6	dddd
+Block: 7	----
+Block: 8	----
+Block: 9	----
+
+=========================
+File name: A
+0	1	2	3	4	
+0	1	2	-1	-1	
+Permissions: 
+1: rwx
+
+File name: C
+0	1	2	3	4	
+4	5	-1	-1	-1	
+Permissions: 
+2: rwx
+1: w
+
+File name: D
+0	1	2	3	4	
+6	-1	-1	-1	-1	
+Permissions: 
+2: rwx
+
