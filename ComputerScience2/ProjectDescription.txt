@@ -1,0 +1,78 @@
+Final project description
+Final project
+For the final project, you will implement the Mastermind game. You will create the underlying model, a console version as well as a GUI version. The setup of the game is as follows:
+The pool of colors are Red, Blue, Yellow, Green, Orange and Purple.
+The coder creates a four color code, which may include duplicates
+Game play:
+The guesser makes a guess by inserting four pegs into the next open turn
+The coder provides hints in the following way:
+A black peg indicates that the correct color is in the correct position
+A white peg indicates that the correct color is used but in the incorrect position
+In the case of a color that could be either, the black peg wins out
+The guesser continues to make up to 10 guesses, till they get 4 black pegs
+The game ends when either:
+The guesser correctly guesses the code
+The guesser uses up all their guesses
+The score is based on how many guesses it took for the guesser to get 4 black pegs. They get 0 if they did not guess the right answer.
+You will design your own GUI to display the game, that displays the guesses, along with the hints provided. Here is an example of the game from Wikipedia
+Additional requirements
+The final score should be displayed at the end of the game
+There should be a way to play the game in “debug” mode, where the game can be verified for correctness. In this mode, Instead of the computer generating the initial code, the player will provide one and it should be displayed on the console at all times the correct code can be displayed on the console
+All moves and guesses should be visible after every move so the player can go back and check their work
+Two appointments with me: First one must be done by 12/03 and the second by 12/12
+You must have a completely working version on the console before moving onto the GUI
+The model must be separate from the view/controller in both the console version and the GUI version
+Deliverables
+There are three deliverables for this project.
+Stage 1: Planning the project (Due 12/03): 15 points
+Set up a 15 minute appointment with me for some time before 12/03 to discuss your design on my calendar
+Create a new repository for the CS 2 final project called "CS2FinalProject" and add me as a collaborator (thodeb@bethel.edu)
+Bring a typed up printed document that includes the following:
+A table of method names along with their purpose input parameters and possible exceptions. As a guide, think about what the javadoc comment would include for each method. You would have multiple rows as follows:
+Name	Purpose	Input parameters and types	Exceptions
+A table of instance variables, along with type, name and purpose as follows:
+Type	Name	Purpose
+The flowchat of your code: What method would call what other methods, etc.
+Create a diagram of what the view of the game will look like and add it to the final project repository on github: It should include at least the following:
+The board
+Options to (1) Restart the Game (2) Quit the Application (3) Restart the game: Label each component type (Button/drop down menu/textfield, etc)
+An area that displays if someone has won along with the points obtained (It can be a Dialog box)
+Some things to consider: (Not an exhaustive list)
+What are error conditions that you will want to check for
+What are some states: What information needs to be maintained across each method (list of guesses, list of clues, number of guesses, etc): These correspond to your instance variables
+What is the most efficient way to store the guesses and clues internally: Is the size dynamic or static?
+What states/conditions should be modifiable to an outside class and what shouldn't: Should the user be able to change the number of guesses? Only provide mutators for those that can be changed.
+Stage 2: Console version (Due 12/11): 20 points
+Set up an appointment to meet with me by Wednesday, 12/11 to discuss the model of the game
+Upload new versions of the project onto github so far, on Friday (12/06), Monday (12/09) and Wednesday (12/11)
+The game must include the following at this point:
+The model for the game with all the methods and instance variables we discussed in the first stage
+A main that allows you to test it on the command line. It should accept an input for the current player's turn and then display the board. It should also report if someone has won/lost and their score, if applicable
+The main should include the option for the user to provide the string up front and another option for it to be generated automatically
+Some test cases:
+For the code RBGY: OOOO should return nothing, BRGY should return two black and two white, GGOY should return 1 white and 1 black
+For the code RGGB: RRRB should return 2 blacks, GGGB should return 3 blacks, GGYB should return 2 blacks and 1 white
+NOTE: You don't have to worry about InputMismatchException in this stage. However any exceptions thrown by the model must be handled gracefully
+Here is psueodocode of what the Driver might be at this point:
+clue = R - B - B - G
+g = new game
+
+print "Enter guess"
+guess = user input
+while guesses < 10 and correct answer not guessed: 
+	report number black/white
+	print current guesses/clues
+	print "Enter guess"
+	guess = user input
+if guesses = 10:
+	print "You lost"
+else
+	print "You won with score: "
+Stage 3: GUI version (Due 12/19): 25 points
+Now, you will get rid of the console version and create a GUI view and controller
+There should still be an option for the user to provide the initial string (it might be as simple as the constructor taking in the four values)
+Submit the final version only via Moodle
+Final meeting time: If you have completely turned it in by Wedneday night, you do not have to come, otherwise, you will be expected to come to the final session, so I can see your progress. Otherwise, you will lose points in the final submission.
+
+
+Last modified: Friday, December 6, 2019, 8:03 PM
