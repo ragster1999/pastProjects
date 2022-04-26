@@ -1,0 +1,55 @@
+%% #3
+%% a)
+    % mysteryCurve( X , Y , dy)
+x = table2array(mysteryCurve(1:151, 1)); % pulling rows from column 1
+y = table2array(mysteryCurve(1:151, 2)); 
+dy = table2array(mysteryCurve(1:151, 3));
+
+subplot(2,2,1)
+scatter(x, y)
+title('Mystery Data')
+xlabel('x axis')
+ylabel('y axis')
+
+    %% b)
+% we could use logerithmic, exponential, or the beginning of a sine wave
+
+    % c)
+%% Fit Data - logerithmic
+subplot(2,2,2)
+logFun = @(beta, x) (beta(1) * log(x) + beta(2))
+logInitials = [1,1]
+logCoeffs = nlinfit(x, y, logFun, logInitials)
+log_y = logFun(logCoeffs, x);
+plot(x,y,...
+    x, log_y)
+title('Logerithmic Fit')
+xlabel('x axis')
+ylabel('y axis')
+logDiff = rms(log_y - y)
+
+%% Fit Data - Polynomial
+subplot(2,2,3)
+polyFun = @(beta, x) (beta(1)*(x - beta(2)).^beta(3))
+polyInitials = [.1,1,.1]
+polyCoeffs = nlinfit(x, y, polyFun, polyInitials)
+poly_y = polyFun(polyCoeffs, x);
+plot(x,y,...
+    x, poly_y)
+title('Polynomial Fit')
+xlabel('x axis')
+ylabel('y axis')
+polyDiff = rms(poly_y - y)
+
+%% Fit Data - Sinusodal
+subplot(2,2,4)
+sineFun = @(beta, x)(beta(1)*sin(beta(2)*x + beta(3)))
+sineInitials = [.1,1,.1]
+sineCoeffs = nlinfit(x, y, sineFun, sineInitials)
+sine_y = sineFun(sineCoeffs, x);
+plot(x,y,...
+    x, sine_y)
+title('Sinusodal Fit')
+xlabel('x axis')
+ylabel('y axis')
+sineDiff = rms(sine_y - y)
