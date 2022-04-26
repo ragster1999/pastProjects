@@ -1,0 +1,15 @@
+/Users/ragster1999/Documents/VScode/learning/cs/bin/Debug/net6.0/cs
+/Users/ragster1999/Documents/VScode/learning/cs/bin/Debug/net6.0/cs.deps.json
+/Users/ragster1999/Documents/VScode/learning/cs/bin/Debug/net6.0/cs.runtimeconfig.json
+/Users/ragster1999/Documents/VScode/learning/cs/bin/Debug/net6.0/cs.dll
+/Users/ragster1999/Documents/VScode/learning/cs/bin/Debug/net6.0/ref/cs.dll
+/Users/ragster1999/Documents/VScode/learning/cs/bin/Debug/net6.0/cs.pdb
+/Users/ragster1999/Documents/VScode/learning/cs/obj/Debug/net6.0/cs.csproj.AssemblyReference.cache
+/Users/ragster1999/Documents/VScode/learning/cs/obj/Debug/net6.0/cs.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ragster1999/Documents/VScode/learning/cs/obj/Debug/net6.0/cs.AssemblyInfoInputs.cache
+/Users/ragster1999/Documents/VScode/learning/cs/obj/Debug/net6.0/cs.AssemblyInfo.cs
+/Users/ragster1999/Documents/VScode/learning/cs/obj/Debug/net6.0/cs.csproj.CoreCompileInputs.cache
+/Users/ragster1999/Documents/VScode/learning/cs/obj/Debug/net6.0/cs.dll
+/Users/ragster1999/Documents/VScode/learning/cs/obj/Debug/net6.0/ref/cs.dll
+/Users/ragster1999/Documents/VScode/learning/cs/obj/Debug/net6.0/cs.pdb
+/Users/ragster1999/Documents/VScode/learning/cs/obj/Debug/net6.0/cs.genruntimeconfig.cache
