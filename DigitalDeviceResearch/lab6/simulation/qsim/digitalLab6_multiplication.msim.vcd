@@ -1,0 +1,644 @@
+$comment
+	File created using the following command:
+		vcd file digitalLab6_multiplication.msim.vcd -direction
+$end
+$date
+	Thu Mar 12 13:24:46 2020
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module digitalLab6_multiplication_vlg_vec_tst $end
+$var reg 1 ! m0 $end
+$var reg 1 " m1 $end
+$var reg 1 # m2 $end
+$var reg 1 $ m3 $end
+$var reg 1 % q0 $end
+$var reg 1 & q1 $end
+$var reg 1 ' q2 $end
+$var reg 1 ( q3 $end
+$var wire 1 ) p0 $end
+$var wire 1 * p1 $end
+$var wire 1 + p2 $end
+$var wire 1 , p3 $end
+$var wire 1 - p4 $end
+$var wire 1 . p5 $end
+$var wire 1 / p6 $end
+$var wire 1 0 p7 $end
+
+$scope module i1 $end
+$var wire 1 1 gnd $end
+$var wire 1 2 vcc $end
+$var wire 1 3 unknown $end
+$var tri1 1 4 devclrn $end
+$var tri1 1 5 devpor $end
+$var tri1 1 6 devoe $end
+$var wire 1 7 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 8 m0~input_o $end
+$var wire 1 9 q0~input_o $end
+$var wire 1 : p0~0_combout $end
+$var wire 1 ; m1~input_o $end
+$var wire 1 < q1~input_o $end
+$var wire 1 = FA10|s~0_combout $end
+$var wire 1 > q2~input_o $end
+$var wire 1 ? m2~input_o $end
+$var wire 1 @ FA11|s~combout $end
+$var wire 1 A FB10|s~0_combout $end
+$var wire 1 B q3~input_o $end
+$var wire 1 C m3~input_o $end
+$var wire 1 D FA12|s~combout $end
+$var wire 1 E FC10|s~0_combout $end
+$var wire 1 F FB11|Cout~0_combout $end
+$var wire 1 G FB11|s~combout $end
+$var wire 1 H FA13|s~combout $end
+$var wire 1 I FB12|s~combout $end
+$var wire 1 J FC11|s~combout $end
+$var wire 1 K FC11|Cout~0_combout $end
+$var wire 1 L mdq2~combout $end
+$var wire 1 M FC11|Cout~1_combout $end
+$var wire 1 N FB12|Cout~0_combout $end
+$var wire 1 O FA13|Cout~0_combout $end
+$var wire 1 P FB13|s~0_combout $end
+$var wire 1 Q FC12|s~combout $end
+$var wire 1 R FB13|Cout~0_combout $end
+$var wire 1 S FC11|Cout~2_combout $end
+$var wire 1 T FB13|s~combout $end
+$var wire 1 U FC13|s~combout $end
+$var wire 1 V FC13|Cout~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+1"
+1#
+1$
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+0/
+00
+01
+12
+x3
+14
+15
+16
+07
+18
+09
+0:
+1;
+0<
+0=
+0>
+1?
+0@
+0A
+0B
+1C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+1S
+0T
+0U
+0V
+$end
+#20000
+1%
+19
+1D
+1@
+1=
+1:
+1)
+1*
+1G
+1E
+1A
+1+
+1,
+#40000
+1&
+0%
+1<
+09
+1H
+0:
+0)
+1I
+1J
+1-
+#60000
+1%
+19
+1O
+0H
+0=
+1:
+1)
+0*
+0I
+1P
+1T
+1Q
+0J
+0-
+1.
+#80000
+1'
+0&
+0%
+1>
+0<
+09
+0O
+0D
+0@
+1R
+0P
+1N
+0G
+0:
+0A
+0+
+0)
+0N
+1I
+1G
+1P
+1U
+1A
+1+
+1/
+0R
+1J
+1-
+0U
+0/
+#100000
+1%
+19
+1F
+1D
+1@
+1=
+1:
+1)
+1*
+1N
+0I
+0A
+0+
+0T
+1R
+0Q
+0J
+0-
+0.
+1U
+1/
+#120000
+1&
+0%
+1<
+09
+1H
+0:
+0)
+1I
+1J
+1-
+#140000
+1%
+19
+1O
+0H
+0=
+1:
+1)
+0*
+0I
+0P
+1T
+1Q
+0J
+0-
+1.
+#160000
+1(
+0'
+0&
+0%
+1B
+0>
+0<
+09
+0O
+0F
+0D
+0@
+1P
+0N
+1M
+1K
+1I
+0G
+1L
+0:
+0E
+1A
+1V
+10
+1+
+0,
+0)
+0S
+0R
+0K
+0I
+0P
+1E
+0A
+0+
+1,
+0T
+1S
+1J
+0U
+0/
+1-
+0V
+1U
+1/
+00
+#180000
+1%
+19
+1D
+1@
+1=
+1:
+1)
+1*
+1K
+1G
+0E
+1A
+1+
+0,
+0S
+0J
+0Q
+0.
+0-
+1V
+0U
+0/
+10
+#200000
+1&
+0%
+1<
+09
+1H
+0:
+0)
+1I
+1J
+1-
+#220000
+1%
+19
+1O
+0H
+0=
+1:
+1)
+0*
+0I
+1P
+1T
+1Q
+0J
+0-
+1.
+#240000
+1'
+0&
+0%
+1>
+0<
+09
+0O
+0D
+0@
+1R
+0P
+1N
+0G
+0:
+0A
+0+
+0)
+0N
+1I
+1G
+1P
+1J
+1U
+1A
+1+
+1/
+1-
+0R
+0U
+0/
+#260000
+1%
+19
+1F
+1D
+1@
+1=
+1:
+1)
+1*
+1N
+0I
+0A
+0+
+0T
+1R
+0Q
+0J
+0-
+0.
+1U
+1/
+#280000
+1&
+0%
+1<
+09
+1H
+0:
+0)
+1I
+1J
+1-
+#300000
+1%
+19
+1O
+0H
+0=
+1:
+1)
+0*
+0I
+0P
+1T
+1Q
+0J
+0-
+1.
+#320000
+0(
+0'
+0&
+0%
+0B
+0>
+0<
+09
+0O
+0F
+0D
+0@
+1P
+0N
+0M
+0K
+1I
+0G
+0L
+0:
+1E
+1A
+0U
+0/
+1+
+1,
+0)
+1S
+0R
+0I
+0P
+1J
+0E
+0A
+0+
+0,
+1-
+0T
+0Q
+0J
+0V
+00
+0-
+0.
+#340000
+1%
+19
+1D
+1@
+1=
+1:
+1)
+1*
+1G
+1E
+1A
+1+
+1,
+#360000
+1&
+0%
+1<
+09
+1H
+0:
+0)
+1I
+1J
+1-
+#380000
+1%
+19
+1O
+0H
+0=
+1:
+1)
+0*
+0I
+1P
+1T
+1Q
+0J
+0-
+1.
+#400000
+1'
+0&
+0%
+1>
+0<
+09
+0O
+0D
+0@
+1R
+0P
+1N
+0G
+0:
+0A
+0+
+0)
+0N
+1I
+1G
+1P
+1U
+1A
+1+
+1/
+0R
+1J
+1-
+0U
+0/
+#420000
+1%
+19
+1F
+1D
+1@
+1=
+1:
+1)
+1*
+1N
+0I
+0A
+0+
+0T
+1R
+0Q
+0J
+0-
+0.
+1U
+1/
+#440000
+1&
+0%
+1<
+09
+1H
+0:
+0)
+1I
+1J
+1-
+#460000
+1%
+19
+1O
+0H
+0=
+1:
+1)
+0*
+0I
+0P
+1T
+1Q
+0J
+0-
+1.
+#480000
+1(
+0'
+0&
+0%
+1B
+0>
+0<
+09
+0O
+0F
+0D
+0@
+1P
+0N
+1M
+1K
+1I
+0G
+1L
+0:
+0E
+1A
+1V
+10
+1+
+0,
+0)
+0S
+0R
+0K
+0I
+0P
+1E
+0A
+0+
+1,
+0T
+1S
+1J
+0U
+0/
+1-
+0V
+1U
+1/
+00
+#500000
