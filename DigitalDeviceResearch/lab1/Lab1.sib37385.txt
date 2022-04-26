@@ -1,0 +1,112 @@
+Sidney Boros, Kyle Wahlberg, Alex Gonzalez
+
+
+Part 1 EchoClient I/O
+
+student@student-vm:~/labs/lab1/cnaiapi/make-linux$ ./echoclient 140.88.181.147 5000
+Input   > Hello
+Received> Hello
+
+Input   > Gucci
+Received> Gucci
+
+Input   > ^C
+
+
+Part 2 ChatClient I/O
+
+student@student-vm:~/labs/lab1/cnaiapi/make-linux$ ./chatclient 140.88.181.193 5000
+Chat Connection Established.t
+Input   > hello
+Received> oh hey there
+Input   > nice
+Received> Glad this works
+Input   > As am I. On to the next?
+Received> I believe so!
+Input   > ^C
+
+
+Part 3 WebClient I/O
+
+student@student-vm:~/labs/lab1/cnaiapi/make-linux$ ./webclient 140.88.181.193 / 27000
+HTTP/1.0 200 OK
+Server: CNAI Demo Web Server
+Content-Length: 235
+Content-Type: text/html
+t
+<head></head><body><html><h1>Welcome to the CNAI Demo Server</h1><p>
+Why not visit: <ul><li><a href="http://netbook.cs.purdue.edu">
+Netbook Home Page</a><li><a href="http://www.comerbooks.com">
+Comer Books Home Page<a></ul></html></body>
+
+
+Part 4 Attempt
+
+Some comments on this attempt: We put in a good amount of trying to get this to function
+correctly but came up just a little short. Our biggest problems came on the side
+of the server, but we also had some problems with the client as well. The server side
+of things, we struggled with the char buff[BUFFSIZE] syntax and what to do with that, 
+at well as struggled with successfully keeping our while loop checking for other 
+clients to join running long enough to work, as well as some minor fork() syntax as well. 
+On the client side, we struggle with the input printing without having to hit the enter/ 
+return key to get it to show up. The output below is output that is only printed after
+the client has hit the return key. Another struggle was our schedules not aligning 
+up the way they needed to for an even more adequate amount of time to work on the 
+challenge. 
+
+student@student-vm:~/labs/lab1/cnaiapi/make-linux$ ./echoclient 140.88.181.151 4000
+
+countdown from server
+Received> 
+
+17037Received> 
+
+15
+Received> 
+
+14
+Received> 
+
+13
+Received> 
+
+12
+Received> 
+
+11
+Received> 
+
+10
+Received> 
+
+9
+Received> 
+
+8
+Received> 
+
+7
+Received> 
+
+6
+Received> 
+
+5
+Received> 
+
+4
+Received> 
+
+3
+Received> 
+
+2
+Received> 
+
+1
+Received> 
+
+
+
+
+^C
